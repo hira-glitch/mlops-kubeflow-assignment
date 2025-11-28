@@ -1,0 +1,14 @@
+artifact_uri: file:///C:/Users/Lenovo/OneDrive/Desktop/7th%20semester/mlops_A3/mlops-kubeflow-assignment/mlruns/255052910262552913/c756fda8cc8d4cf59dfd7af4965fd14a/artifacts
+end_time: 1764343236713
+entry_point_name: ''
+experiment_id: '255052910262552913'
+lifecycle_stage: active
+run_id: c756fda8cc8d4cf59dfd7af4965fd14a
+run_name: salty-quail-22
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1764343215869
+status: 3
+tags: []
+user_id: Lenovo

@@ -1,0 +1,14 @@
+artifact_uri: file:///C:/Users/Lenovo/OneDrive/Desktop/7th%20semester/mlops_A3/mlops-kubeflow-assignment/src/mlruns/379529703748247043/1396a80c7d8a4d229468cb9591e41847/artifacts
+end_time: 1764342727557
+entry_point_name: ''
+experiment_id: '379529703748247043'
+lifecycle_stage: active
+run_id: 1396a80c7d8a4d229468cb9591e41847
+run_name: bedecked-pig-57
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1764342727357
+status: 4
+tags: []
+user_id: Lenovo

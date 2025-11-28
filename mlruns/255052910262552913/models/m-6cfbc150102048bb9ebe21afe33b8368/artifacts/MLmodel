@@ -1,0 +1,22 @@
+artifact_path: file:///C:/Users/Lenovo/OneDrive/Desktop/7th%20semester/mlops_A3/mlops-kubeflow-assignment/mlruns/255052910262552913/models/m-6cfbc150102048bb9ebe21afe33b8368/artifacts
+flavors:
+  python_function:
+    env:
+      conda: conda.yaml
+      virtualenv: python_env.yaml
+    loader_module: mlflow.sklearn
+    model_path: model.pkl
+    predict_fn: predict
+    python_version: 3.13.5
+  sklearn:
+    code: null
+    pickled_model: model.pkl
+    serialization_format: cloudpickle
+    sklearn_version: 1.7.2
+mlflow_version: 3.6.0
+model_id: m-6cfbc150102048bb9ebe21afe33b8368
+model_size_bytes: 3489964
+model_uuid: m-6cfbc150102048bb9ebe21afe33b8368
+prompts: null
+run_id: c756fda8cc8d4cf59dfd7af4965fd14a
+utc_time_created: '2025-11-28 15:20:16.962865'

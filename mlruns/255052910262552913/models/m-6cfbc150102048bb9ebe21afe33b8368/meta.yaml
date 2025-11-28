@@ -1,0 +1,10 @@
+artifact_location: file:///C:/Users/Lenovo/OneDrive/Desktop/7th%20semester/mlops_A3/mlops-kubeflow-assignment/mlruns/255052910262552913/models/m-6cfbc150102048bb9ebe21afe33b8368/artifacts
+creation_timestamp: 1764343216892
+experiment_id: '255052910262552913'
+last_updated_timestamp: 1764343236626
+model_id: m-6cfbc150102048bb9ebe21afe33b8368
+model_type: null
+name: random_forest_model
+source_run_id: c756fda8cc8d4cf59dfd7af4965fd14a
+status: 2
+status_message: null
