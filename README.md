@@ -1,85 +1,97 @@
-MLOps Pipeline Project
+********** MLOps Pipeline Project **********
 
 Course: Cloud MLOps (BS AI)
-Student Name: Hira Binte Zahid
-Student ID: 22i-0616
-About the Project
-This project demonstrates an end-to-end MLOps pipeline for the Boston Housing dataset. The pipeline handles data versioning, preprocessing, model training, evaluation, and experiment tracking. Tools used include Python, DVC, MLflow, and Jenkins/GitHub Actions to make the workflow reproducible and automated.
+Student Name:Hira Binte Zahid
+Student ID: 22i-0508
 
-Project Layout
+********** Project Overview **********
+This project demonstrates an end-to-end MLOps pipeline for the Boston Housing dataset. The pipeline handles:
+
+Data versioning using DVC
+
+Data preprocessing and cleaning
+
+Model training and evaluation
+
+Experiment tracking using MLflow
+
+Continuous Integration with Jenkins/GitHub Actions
+
+The goal is to create a reproducible and automated workflow for machine learning experiments.
+
+********** Project Structure **********
+
 mlops-mlflow-assignment/
+├─ data/                  # Raw and processed datasets
+├─ src/                   # Python scripts for pipeline steps
+│   ├─ pipeline_components.py
+│   ├─ model_training.py
+├─ components/            # Saved MLflow components
+├─ pipeline.py            # Pipeline orchestration
+├─ requirements.txt       # Python dependencies
+├─ Dockerfile             # Custom Docker image (optional)
+├─ Jenkinsfile            # CI/CD automation
+├─ .dvc/                  # DVC configuration
+└─ README.md              # Project documentation
 
-data/ (Raw and processed datasets)
 
-src/ (Python scripts for pipeline steps)
+********** Getting Started **********
 
-pipeline_components.py
+Clone the Repository
 
-model_training.py
-
-components/ (Saved MLflow components)
-
-pipeline.py (Pipeline orchestration)
-
-requirements.txt (Python dependencies)
-
-Dockerfile (Custom Docker image if used)
-
-Jenkinsfile (CI/CD pipeline automation)
-
-.dvc/ (DVC configuration)
-
-README.md (Project documentation)
-
-Getting Started
-
-Clone the repository:
 git clone <repository-url>
 cd mlops-mlflow-assignment
 
-Install dependencies:
+
+Install Dependencies
+
 pip install -r requirements.txt
 
-Setup DVC:
+
+Setup DVC
 
 Initialize DVC and configure remote storage
 
 Pull the dataset using DVC
 
-Run MLflow UI to track experiments, metrics, and artifacts
+Run MLflow UI
 
-Running the Pipeline
+Start MLflow to track experiments, metrics, and artifacts
 
-Execute the main pipeline using Python
+********** Running the Pipeline **********
 
-Pipeline stages tracked in MLflow include:
+Execute the pipeline using Python
+
+MLflow tracks the following stages:
 
 Data extraction from DVC
 
-Data preprocessing and cleaning
+Data preprocessing
 
 Model training
 
 Model evaluation
 
-Use MLflow UI to view experiment metrics, model versions, and artifacts
+Check MLflow UI for metrics, model versions, and artifacts
 
-Continuous Integration
+********** Continuous Integration **********
 
-Jenkins or GitHub Actions automatically:
+The pipeline is automated using Jenkins or GitHub Actions:
 
-Sets up environment and installs dependencies
+Sets up the environment and installs dependencies
 
-Validates and runs the pipeline
+Compiles and runs the pipeline
 
-Logs experiments to MLflow
+Logs experiments automatically to MLflow
 
-Notes
+********** Notes **********
 
 Dataset: Boston Housing
 
 Model: Random Forest Regressor
 
-Metrics tracked: RMSE, R², MAE
+Metrics Tracked: RMSE, R², MAE
 
-Pipeline tracking: MLflow
+Pipeline Tracking: MLflow
+
+
