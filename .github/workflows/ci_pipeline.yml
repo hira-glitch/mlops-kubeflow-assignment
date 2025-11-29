@@ -1,44 +1,30 @@
-name: ML Pipeline CI
+name: MLflow Pipeline CI
 
-# Trigger the workflow on push or PR to main
 on:
   push:
-    branches: [main]
+    branches: [ "main" ]
   pull_request:
-    branches: [main]
+    branches: [ "main" ]
+  workflow_dispatch:
 
 jobs:
-  build-and-test:
+  run-mlflow-pipeline:
     runs-on: ubuntu-latest
 
     steps:
-    - name: Checkout code
-      uses: actions/checkout@v4
+    - name: Checkout repository
+      uses: actions/checkout@v3
 
     - name: Set up Python
       uses: actions/setup-python@v4
       with:
-        python-version: '3.11'
+        python-version: 3.11
 
     - name: Install dependencies
       run: |
         python -m pip install --upgrade pip
         pip install -r requirements.txt
-        pip install mlflow pandas scikit-learn joblib dvc
 
-    - name: Pull data using DVC
-      run: |
-        dvc pull
-
-    - name: Run MLflow Pipeline
+    - name: Run ML Pipeline
       run: |
         python src/pipeline_components.py
-
-    - name: Upload MLflow Artifacts
-      uses: actions/upload-artifact@v4
-      with:
-        name: mlflow-artifacts
-        path: |
-          data/model.pkl
-          data/metrics.txt
-          mlruns/
